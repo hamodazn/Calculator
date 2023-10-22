@@ -10,10 +10,8 @@ let currValue = "";
 //handle interaction
 function handleInteraction(value) {
   if (operators.includes(value)) {
-    console.log("clicked operator", value);
     handleOperatorInput(value);
   } else {
-    console.log("clicked number", value);
     handleNumericInput(value);
   }
   updateUI();
